@@ -1,0 +1,17 @@
+Написати програму, яка генерує число від 0 до 100, і якщо згенеровано число більше 50, то викликає функцію, яка виводить повідомлення Yes.
+
+   #include <iostream>
+#include <cstdlib> // щоб використати функцій srand() і rand() підключаємо станд бібл
+using namespace std;
+int main() {
+    srand(time(NULL)); // для того щоб ініц генер випадк чисел
+
+    int randomNumber = rand() % 101; // генеруємо чичло від 0 до 100
+    cout << "згенероване число: " << randomNumber << endl;    
+    if (randomNumber > 50) {
+        cout << "Yes" << endl;
+    }
+
+    return 0;
+}
+    
